@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Armando França Duarte Filho">
+    <meta name="description" content="portfólio armando">
+    <meta name="keywords" content="html, css, objetivo">
+    
+    <title>Armando Duarte - Portfólio.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem vindo ao meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li> <a href="#home">Home</a></li>
+                <li> <a href="#sobre">Sobre</a></li>
+                <li> <a href="#projetos">Projetos</a></li>
+                <li> <a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="imagens/a.jpg" alt="Foto de Armando" class="foto-perfil">
+        <p>Desenvolvedor Web</p>
+        <p>Bem-vindo! Sou desenvolvedor web, Aqui compartilho meu trabalho e
+            experiências na área de desenvolvimento web.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p>Me chamo Armando, estudante de Análise e Desenvolvimento de Sistemas, com foco
+        em desenvolvimento web e front end.  Meu foco está em transformar conceitos em interfaces dinâmicas e bem estruturadas, unindo estética e eficiência para criar produtos digitais que realmente impactem o usuário. Busco constantemente aprender novas ferramentas e metodologias 
+        para inovar e aprimorar cada projeto em que me envolvo.
+        </p>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <h3>Site - FastRun</h3>
+            <p>Um site para uma marca de roupas, interativo e útil, foi feito a partir de uma idéia pessoal.</p>
+            <a href="#">Ver mais</a>
+        </div>
+        <div class="projeto">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+            <a href="#">Ver mais</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Me encontre nas redes sociais ou envie um e-mail.</p>
+        <ul>
+            <li><a href="https://github.com/dinhovsn">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/dinhovsnn">LinkedIn</a></li>
+            <li><a href="armando04drt@gmail.com">E-mail</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Armando. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script>
+        document.querySelector('.foto-perfil').addEventListener('mouseenter', (event) => {
+    event.target.style.transform = 'scale(1.2)';
+    event.target.style.transition = 'transform 0.3s ease-in-out';
+});
+
+document.querySelector('.foto-perfil').addEventListener('mouseleave', (event) => {
+    event.target.style.transform = 'scale(1)';
+});
+
+
+    </script>
+</body>
+
+
+</html>
